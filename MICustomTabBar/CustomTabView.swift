@@ -14,12 +14,12 @@ public enum TabStyle {
 
 public struct CustomTabView: View {
     
-    var tabsImage : [String]
-    var selectedTabColor: Color
-    var deSelectedTabColor: Color
-    var tabBarBackgroundColor: Color
-    @Binding var selectedTab: Int
-    var tabStyle : TabStyle = .one
+    public var tabsImage : [String]
+    public var selectedTabColor: Color
+    public var deSelectedTabColor: Color
+    public var tabBarBackgroundColor: Color
+    @Binding public var selectedTab: Int
+    public var tabStyle : TabStyle = .one
 
     public var body: some View {
         
