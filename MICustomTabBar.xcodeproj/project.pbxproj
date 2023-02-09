@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B84CD28C29928FC000D4685B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84CD28B29928FC000D4685B /* Message.swift */; };
-		B84CD28E29928FFE00D4685B /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84CD28D29928FFE00D4685B /* Profile.swift */; };
-		B84CD2902992902900D4685B /* Fav.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84CD28F2992902900D4685B /* Fav.swift */; };
-		B876640A298D37AA00A8B6E1 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8766409298D37AA00A8B6E1 /* Home.swift */; };
-		B876640C298D42B600A8B6E1 /* bookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = B876640B298D42B600A8B6E1 /* bookmark.swift */; };
 		B88FC726298D0D9D00B1014F /* MICustomTabBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88FC725298D0D9D00B1014F /* MICustomTabBarApp.swift */; };
 		B88FC728298D0D9D00B1014F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88FC727298D0D9D00B1014F /* ContentView.swift */; };
 		B88FC72A298D0D9E00B1014F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B88FC729298D0D9E00B1014F /* Assets.xcassets */; };
@@ -20,11 +15,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B84CD28B29928FC000D4685B /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		B84CD28D29928FFE00D4685B /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
-		B84CD28F2992902900D4685B /* Fav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fav.swift; sourceTree = "<group>"; };
-		B8766409298D37AA00A8B6E1 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		B876640B298D42B600A8B6E1 /* bookmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bookmark.swift; sourceTree = "<group>"; };
 		B88FC722298D0D9D00B1014F /* MICustomTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MICustomTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88FC725298D0D9D00B1014F /* MICustomTabBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MICustomTabBarApp.swift; sourceTree = "<group>"; };
 		B88FC727298D0D9D00B1014F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,11 +56,6 @@
 				B88FC725298D0D9D00B1014F /* MICustomTabBarApp.swift */,
 				B88FC727298D0D9D00B1014F /* ContentView.swift */,
 				B88FC733298D0E1A00B1014F /* CustomTabView.swift */,
-				B8766409298D37AA00A8B6E1 /* Home.swift */,
-				B876640B298D42B600A8B6E1 /* bookmark.swift */,
-				B84CD28B29928FC000D4685B /* Message.swift */,
-				B84CD28D29928FFE00D4685B /* Profile.swift */,
-				B84CD28F2992902900D4685B /* Fav.swift */,
 				B88FC729298D0D9E00B1014F /* Assets.xcassets */,
 				B88FC72B298D0D9E00B1014F /* Preview Content */,
 			);
@@ -155,13 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B876640C298D42B600A8B6E1 /* bookmark.swift in Sources */,
-				B84CD2902992902900D4685B /* Fav.swift in Sources */,
 				B88FC734298D0E1A00B1014F /* CustomTabView.swift in Sources */,
 				B88FC728298D0D9D00B1014F /* ContentView.swift in Sources */,
-				B84CD28E29928FFE00D4685B /* Profile.swift in Sources */,
-				B84CD28C29928FC000D4685B /* Message.swift in Sources */,
-				B876640A298D37AA00A8B6E1 /* Home.swift in Sources */,
 				B88FC726298D0D9D00B1014F /* MICustomTabBarApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
