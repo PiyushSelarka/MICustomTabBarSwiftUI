@@ -7,15 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B88FC72A298D0D9E00B1014F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B88FC729298D0D9E00B1014F /* Assets.xcassets */; };
-		B88FC72D298D0D9E00B1014F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B88FC72C298D0D9E00B1014F /* Preview Assets.xcassets */; };
 		B88FC734298D0E1A00B1014F /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88FC733298D0E1A00B1014F /* CustomTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B88FC722298D0D9D00B1014F /* MICustomTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MICustomTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B88FC729298D0D9E00B1014F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B88FC72C298D0D9E00B1014F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B88FC733298D0E1A00B1014F /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,18 +46,8 @@
 			isa = PBXGroup;
 			children = (
 				B88FC733298D0E1A00B1014F /* CustomTabView.swift */,
-				B88FC729298D0D9E00B1014F /* Assets.xcassets */,
-				B88FC72B298D0D9E00B1014F /* Preview Content */,
 			);
 			path = MICustomTabBar;
-			sourceTree = "<group>";
-		};
-		B88FC72B298D0D9E00B1014F /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				B88FC72C298D0D9E00B1014F /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,8 +108,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B88FC72D298D0D9E00B1014F /* Preview Assets.xcassets in Resources */,
-				B88FC72A298D0D9E00B1014F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
