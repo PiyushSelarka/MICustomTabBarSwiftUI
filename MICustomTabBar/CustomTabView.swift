@@ -12,7 +12,7 @@ enum TabStyle {
     case two
 }
 
-struct CustomTab: View {
+public struct CustomTab: View {
     
     var tabsImage : [String]
     var selectedTabColor: Color
@@ -21,7 +21,7 @@ struct CustomTab: View {
     @Binding var selectedTab: Int
     var tabStyle : TabStyle = .one
 
-    var body: some View {
+    public var body: some View {
         
         if tabStyle == .one {
             type1(tabsImage: tabsImage, selectedTabColor: selectedTabColor, deSelectedTabColor: deSelectedTabColor, tabBarBackgroundColor: tabBarBackgroundColor, selectedTab: $selectedTab)
