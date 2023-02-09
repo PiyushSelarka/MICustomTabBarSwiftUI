@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum TabStyle {
+public enum TabStyle {
     case one
     case two
 }
