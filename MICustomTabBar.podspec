@@ -10,5 +10,5 @@ s.license          = { :type => 'MIT', :file => 'LICENSE' }
 s.author           = { 'username' => 'piyushselarka.mi@gmail.com' } 
 s.source           = { :git => 'https://github.com/PiyushSelarka/MICustomTabBarSwiftUI.git', :tag => s.version.to_s } 
 s.ios.deployment_target = '15.0'
-s.source_files = 'MICustomTabBar/*.{swift}'
+s.source_files = 'MICustomTabBar/CustomTabView.{swift}'
 end
