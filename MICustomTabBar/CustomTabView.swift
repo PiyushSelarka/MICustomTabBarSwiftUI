@@ -12,7 +12,7 @@ enum TabStyle {
     case two
 }
 
-public struct CustomTab: View {
+public struct CustomTabView: View {
     
     var tabsImage : [String]
     var selectedTabColor: Color
