@@ -18,15 +18,15 @@ public struct CustomTabView: View {
     public var selectedTabColor: Color
     public var deSelectedTabColor: Color
     public var tabBarBackgroundColor: Color
-    @State public var selectedTab: Int
+    @Binding public var selectedTab: Int
     public var tabStyle : TabStyle = .one
 
-    public init(tabsImage: [String], selectedTabColor: Color, deSelectedTabColor: Color, tabBarBackgroundColor: Color, selectedTab: Int, tabStyle: TabStyle) {
+    public init(tabsImage: [String], selectedTabColor: Color, deSelectedTabColor: Color, tabBarBackgroundColor: Color, selectedTab: Binding<Int>, tabStyle: TabStyle) {
         self.tabsImage = tabsImage
         self.selectedTabColor = selectedTabColor
         self.deSelectedTabColor = deSelectedTabColor
         self.tabBarBackgroundColor = tabBarBackgroundColor
-        self.selectedTab = selectedTab
+        self._selectedTab = selectedTab
         self.tabStyle = tabStyle
     }
     
