@@ -12,15 +12,24 @@ public enum TabStyle {
     case two
 }
 
-@frozen public struct CustomTabView: View {
+public struct CustomTabView: View {
     
     public var tabsImage : [String]
     public var selectedTabColor: Color
     public var deSelectedTabColor: Color
     public var tabBarBackgroundColor: Color
-    @Binding public var selectedTab: Int
+    @State public var selectedTab: Int
     public var tabStyle : TabStyle = .one
 
+    public init(tabsImage: [String], selectedTabColor: Color, deSelectedTabColor: Color, tabBarBackgroundColor: Color, selectedTab: Int, tabStyle: TabStyle) {
+        self.tabsImage = tabsImage
+        self.selectedTabColor = selectedTabColor
+        self.deSelectedTabColor = deSelectedTabColor
+        self.tabBarBackgroundColor = tabBarBackgroundColor
+        self.selectedTab = selectedTab
+        self.tabStyle = tabStyle
+    }
+    
     public var body: some View {
         
         if tabStyle == .one {
