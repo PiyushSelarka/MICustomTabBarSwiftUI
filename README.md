@@ -17,7 +17,7 @@ Good news for all our users out there! Now there are no boundaries to your conve
 Checkout this super easy custom tabbar integration and example.!!! 
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/84714866/168037057-fb6d82f4-0bdd-44cc-adf2-5f622853f658.gif">
+  <img src="">
 </p>
 
 ## Installation
