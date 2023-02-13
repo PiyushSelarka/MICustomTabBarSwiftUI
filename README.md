@@ -1,4 +1,4 @@
-# iOS-Custom-Tabbar-Navigation in SwiftUI
+# iOS Custom Tab Bar in SwiftUI
 
 <a href="https://docs.swift.org/swift-book/" style="pointer-events: stroke;" target="_blank">
 <img src="https://img.shields.io/badge/swift-5.0-brightgreen">
@@ -13,8 +13,8 @@
 <p></p> 
 
 Good news for all our users out there! Now there are no boundaries to your convenience
-
 Checkout this super easy custom tabbar integration and example.!!! 
+This is a sample project how to create a custom tab bar in SwiftUI.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/42262083/218099149-b9e08dae-6b73-44dd-b05a-0b71dc1e4e5e.gif">
@@ -29,72 +29,48 @@ pod 'MICustomTabBar', git: 'https://github.com/PiyushSelarka/MICustomTabBarSwift
 ```
 Then run `pod install` from the Example directory.
 
+## Features
+- Custom tab bar with custom icons and animations
+- Uses SwiftUI's built-in `@State` and `@Binding` to manage tab selection
+
 ## Usage
-
-1. Change the class of a view from UIView to TopTabbarView
-```swift
-@IBOutlet private weak var topTabBarView: TopTabbarView!
-```
-2. Programmatically:
-
-```swift
-let topTabBarView = TopTabbarView(frame: myFrame)
-
-```
+The custom tab bar is implemented in the pod `MICustomTabBar`. To use it in your own project, The CustomTabView view and its dependencies into your project, and modify the icons and animations to fit your design.
 
 ## Customization 
 
 ```swift
-    private func configureTabBarItem() {
+    struct ContentView: View {
+    
+    @State var selectedTab = 0
+    var body: some View {
         
-        topTabBarView.dataSource = ["M", "I", "N", "D", "I", "N", "V", "E", "N", "T", "O", "R", "Y"]
-        topTabBarView.dotColor = .white
-        topTabBarView.waveHeight = 16
-        topTabBarView.leftPadding = 10
-        topTabBarView.rightPadding = 10
-        topTabBarView.tabBarColor = .red
-        topTabBarView.onItemSelected = { (index) in
-                debugPrint("tabIndex: \(index)")
+        ZStack()
+        {
+            TabView(selection: $selectedTab) {
+                AnyView(Text("Home"))
+                    .ignoresSafeArea(.all,edges: .all)
+                    .tag(0)
+                AnyView(Text("bookmark"))
+                    .ignoresSafeArea(.all,edges: .all)
+                    .tag(1)
+                AnyView(Text("message"))
+                    .ignoresSafeArea(.all,edges: .all)
+                    .tag(2)
+                AnyView(Text("heart"))
+                    .ignoresSafeArea(.all,edges: .all)
+                    .tag(3)
+                AnyView(Text("person"))
+                    .ignoresSafeArea(.all,edges: .all)
+                    .tag(4)
+            }
+            .overlay {
+                ZStack{
+                    CustomTabView(tabsImage: ["house","bookmark","message","heart","person"], selectedTabColor: Color.red, deSelectedTabColor: Color.black, tabBarBackgroundColor: Color.blue, selectedTab: $selectedTab, tabStyle: .one)
+                }
+            }
         }
-        topTabBarView.isScaleItem = true
-        topTabBarView.tabBarItemStyle = .setStyle(font: UIFont.boldSystemFont(ofSize: 18),
-                                                  foregroundColor: .white)
     }
-```
-
-#### dataSource
-The dataSource property accepts string array which is used to display title of tab and creates number of tab that you want to create.
-
-#### dotColor
-The dotColor property change the color of dot which is place at center of wave.
-
-#### waveHeight
-The waveHeight property change height of wave.
-
-#### leftPadding, rightPadding
-The left and right padding property will change the tabBar left and right padding to the view.
-
-#### tabBarColor
-The tabBarColor property used to change background color of tabbar color.
-
-#### isScaleItem
-The isScaleItem property enables you to off/on scaling of tab titles.
-
-#### tabBarItemStyle
-The tabBarItemStyle used to tabBarItem font and textColor.
-
-#### selectedTab
-The selectedTab used to set selected tab initially.
-
-#### setSelectedTab(with index: Int)
-This function used to set selected tab programmatically.
-
-#### onItemSelected
-You will receive selected tab index in onItemSelected clouser.
-```swift
-  topTabBarView.onItemSelected = { (index) in
-                debugPrint("tabIndex: \(index)")
-  }
+}
 ```
 
 ## Requirements
